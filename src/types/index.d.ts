@@ -31,7 +31,7 @@ declare type User = {
   userId?: string;
   dwollaCustomerUrl?: string;
   dwollaCustomerId?: string;
-  firstName?: string;
+  firstName: string;
   lastName?: string;
   name: string;
   address1?: string;
@@ -60,7 +60,7 @@ declare type Account = {
   type?: string;
   subtype?: string;
   appwriteItemId?: string;
-  sharableId?: string;
+  shareableId?: string;
 };
 
 declare type Transaction = {
@@ -89,7 +89,7 @@ declare type Bank = {
   accessToken?: string;
   fundingSourceUrl?: string;
   userId?: string;
-  sharableId?: string;
+  shareableId?: string;
 };
 
 declare type AccountTypes =
@@ -233,7 +233,7 @@ declare interface RecentTransactionsProps {
 
 declare interface TransactionHistoryTableProps {
   transactions: Transaction[];
-  page: number;
+  page?: number;
 }
 
 declare interface CategoryBadgeProps {
